@@ -1,11 +1,10 @@
 .container-main{
     text-align: center;
-    width : 50%;
+    width : 80%;
     margin :2rem auto;
     background-color: rgb(114, 114, 245);
     border: solid black ;
     border-radius: 1rem;
-    height : 50vph;
 }
 *{
     padding : 0;
@@ -18,9 +17,7 @@
     font-weight: 500;
     margin-bottom: 2rem;
 }
-#img5{
-    margin : 1rem;
-}
+
 #show-btn{
     border-style: solid;
     background-color: yellow;
@@ -31,7 +28,12 @@
     cursor: pointer;
 }
 #bday-input{
-    width : 15rem;
+    width : 10rem;
     height :2rem;
-    margin-right :2.5rem;
+    margin : 1rem auto;
+}
+#result{
+    color : white;
+    margin :7rem auto;
+    font-size: 2rem;
 }
