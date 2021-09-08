@@ -2,22 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
 :root{
     --primary-color : #1D4ED8;
-    --secondary-color : #ffffff;
-    --secondary-text-color :#1d1d1d93;
-    --background-color : #ebe9e9ce;
+    --secondary-text-color :#00000093;
+    --button-border :#3b82f6;
+    --button-color : #ffffff;
 }
 body{
     padding : 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background-image: url("https://cdn.pixabay.com/photo/2014/06/30/11/40/cupcakes-380178_1280.jpg");
+    background-size: contain;
 }
 .container-main{
-    text-align: center;
-    width : 80%;
-    margin :2rem auto;
-    background-color: rgb(114, 114, 245);
-    border: solid black ;
     border-radius: 1rem;
+    max-width : 500px;
+    padding : 1rem;
+    margin :5rem  auto;
+	background-image :linear-gradient(rgb(14, 196, 252), pink);
+	text-align: center;
+	box-shadow : -1rem 1rem 5rem rgb(39, 224, 248) ;
 }
 *{
     padding : 0;
@@ -27,18 +30,23 @@ body{
     color :var(--secondary-text-color);
     font-size: 2rem;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 2rem;
 }
 
 #show-btn{
-    border-style: solid;
-    background-color: yellow;
-    text-decoration :none;
-    border-radius: 0.5rem;
-    color: var(--primary-color);
-    padding : 0.5rem 1rem;
+    font-size: 18px;
+    display: block;
+    width: 25%;
+    margin:  auto;
+    padding: 6px 15px;
+    border-radius: 50px;
+    color: var(--button-color);
+    background-image: linear-gradient(rgb(192, 192, 192),blue);
+    border: 4px solid var(--button-border);
     cursor: pointer;
+    text-align: center;
+    margin : 1rem auto;
 }
 #bday-input{
     width : 10rem;
@@ -46,7 +54,30 @@ body{
     margin : 1rem auto;
 }
 #result{
-    color : white;
-    margin :7rem auto;
-    font-size: 2rem;
+    color : var(--secondary-text-color);
+    margin :3rem auto;
+    font-size: 1rem;
+}
+.footer{
+	margin : auto;
+	max-width : 500px;
+	background-image :linear-gradient(rgb(14, 196, 252), pink);
+	text-align: center;
+	box-shadow : -1rem 1rem 5rem rgb(39, 224, 248) ;
+	border-radius: 1rem;
+}
+.footer-links{
+	padding:1%;
+	padding: 2rem 0;
+    text-align: center;
+}
+li{
+	display:inline;
+	padding :1rem;
+	
+}
+img{
+	width : 3rem;
+	height : 3rem;
+
 }

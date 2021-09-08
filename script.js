@@ -139,11 +139,10 @@ function reverseStr(str) {
   var showBtnRef = document.querySelector('#show-btn');
   var resultRef = document.querySelector('#result');
   
-  var image = document.querySelector('#img5');
   
   function clickHandler(e){
     var bdayStr = dateInputRef.value; 
-    image.style.display = "none"
+  
     
     if(bdayStr !== ''){
       var listOfDate = bdayStr.split('-');
@@ -168,6 +167,6 @@ function reverseStr(str) {
   }
    
   showBtnRef.addEventListener('click', ()=> {
-    image.style.display = "block";
-    setTimeout(clickHandler,2000)
+
+    setTimeout(clickHandler,500)
   });
